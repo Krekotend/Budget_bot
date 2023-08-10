@@ -5,7 +5,7 @@ from config_a import load_config
 
 def join_base():
     try:
-        connection = psycopg2.connect(host=load_config().db.host, user='krekotend',
+        connection = psycopg2.connect(host=load_config().db.host, user='',
                                       password=load_config().db.password, database=load_config().db.db_name)
         connection.autocommit = True
 
